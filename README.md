@@ -1,14 +1,12 @@
-Recommending preferred contents to TV enthusiasts for media companies such as Netflix, YouTube TV
-or Amazon Prime is crucial. There is a need to automatically tag metadata for content on those 
-platforms to help with data analysis and organization across their users and personalize
-recommendations. The goal therefore is to train a neural network on a convolutional neural network 
-(CNN) architecture to be able to predict celebrity given an image as an input.
-
+Pitch
+Recommending preferred contents to TV enthusiasts for media companies such as Netflix, YouTube TV 
+or Amazon Prime is crucial. we have implemented Collaborative filtering that uses the preferences of a 
+group of users to make recommendations for those users. The goal therefore is to train a neural 
+network to predict ratings on unwatched movies by users, then, media companies can recommend 
+those movies that get the highest predicted ratings to their users.
 Data Source
-The dataset is Pins and is hosted on Kaggle, lick here. The dataset contains about 17534 images of 
-around 105 celebrities. Images are in different sizes and colored. I have written my own code to convert 
-images of 10 celebrities (1006 images in 10 classes) to 35x35 grayscale images. To see the code of the 
-used approach, please click here. In this link, python file 00.py is only for preprocessing and converting 
-10 classes. You do NOT have to run this code as the results are already saved.
-Google drive link: 
-https://drive.google.com/drive/folders/1sDYLxJmuyh96Byq3b7sxMe2HpYKMfZAI?usp=sharing
+To build this recommender system, we train our model on the ratings data in the ml-20m dataset. The 
+ml-20m dataset contains over 20 million ratings of movies by users, as well as additional information 
+such as movie titles and user demographics. To get the dataset on grouplens.org click here. To get the 
+data (only ratings.csv) from my personal google drive, click here.
+GroupLense.org: https://grouplens.org/datasets/movielens 
